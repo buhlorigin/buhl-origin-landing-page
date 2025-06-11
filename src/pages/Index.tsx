@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -61,8 +60,7 @@ const Index = () => {
           
           <div className="text-center max-w-5xl mx-auto relative z-10 animate-fade-in">
             <div className="flex justify-center mb-8">
-              <Badge variant="secondary" className="px-6 py-3 text-lg text-coffee-700 bg-coffee-100 border-coffee-200">
-                <Coffee className="w-5 h-5 mr-3" />
+              <Badge variant="secondary" className="px-6 py-3 text-lg text-green-700 bg-green-100 border-green-200">
                 Digital Coffee Solutions
               </Badge>
             </div>
