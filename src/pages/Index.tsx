@@ -301,14 +301,14 @@ const Index = () => {
 
       {/* Partnership Section */}
       <section className="py-20 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-5xl md:text-6xl font-bold text-green-900 mb-8">
               We Partner with
             </h2>
           </div>
 
-          <div className="relative min-h-[600px] flex items-center justify-center">
+          <div className="relative min-h-[700px] flex items-center justify-center">
             {/* Central Circle */}
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
               <div className="w-32 h-32 bg-green-600 rounded-full flex items-center justify-center shadow-lg">
@@ -319,29 +319,29 @@ const Index = () => {
             </div>
 
             {/* Partnership Cards arranged in a circle */}
-            <div className="relative w-full h-[500px]">
+            <div className="relative w-full h-[650px]">
               {partnerships.map((partnership, index) => {
                 const angle = (index * (360 / partnerships.length)) - 90; // Start from top
-                const radius = 200;
+                const radius = 280; // Increased radius to spread cards further apart
                 const x = Math.cos((angle * Math.PI) / 180) * radius;
                 const y = Math.sin((angle * Math.PI) / 180) * radius;
                 
                 return (
                   <div
                     key={index}
-                    className="absolute w-64 transform -translate-x-1/2 -translate-y-1/2"
+                    className="absolute w-72 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 hover:scale-110 hover:z-20"
                     style={{
                       left: `calc(50% + ${x}px)`,
                       top: `calc(50% + ${y}px)`,
                     }}
                   >
-                    <Card className="bg-white border-gray-200 hover:shadow-lg transition-all duration-300 h-full">
+                    <Card className="bg-white border-gray-200 hover:shadow-xl transition-all duration-300 h-full hover:border-green-300">
                       <CardContent className="p-6">
                         <div className="text-center space-y-4">
-                          <div className={`${partnership.color} text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg`}>
+                          <div className={`${partnership.color} text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg transition-transform duration-300`}>
                             <partnership.icon className="w-8 h-8" />
                           </div>
-                          <h3 className="text-lg font-semibold text-gray-900">
+                          <h3 className="text-lg font-semibold text-gray-900 leading-tight">
                             {partnership.title}
                           </h3>
                           <p className="text-gray-700 leading-relaxed text-sm">
