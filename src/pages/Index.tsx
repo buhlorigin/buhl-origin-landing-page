@@ -302,13 +302,13 @@ const Index = () => {
       {/* Partnership Section */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-24">
             <h2 className="text-5xl md:text-6xl font-bold text-green-900 mb-8">
               We Partner with
             </h2>
           </div>
 
-          <div className="relative min-h-[700px] flex items-center justify-center">
+          <div className="relative min-h-[800px] flex items-center justify-center">
             {/* Central Circle */}
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
               <div className="w-32 h-32 bg-green-600 rounded-full flex items-center justify-center shadow-lg">
@@ -319,10 +319,10 @@ const Index = () => {
             </div>
 
             {/* Partnership Cards arranged in a circle */}
-            <div className="relative w-full h-[650px]">
+            <div className="relative w-full h-[750px]">
               {partnerships.map((partnership, index) => {
                 const angle = (index * (360 / partnerships.length)) - 90; // Start from top
-                const radius = 280; // Increased radius to spread cards further apart
+                const radius = 320; // Further increased radius for more spacing
                 const x = Math.cos((angle * Math.PI) / 180) * radius;
                 const y = Math.sin((angle * Math.PI) / 180) * radius;
                 
