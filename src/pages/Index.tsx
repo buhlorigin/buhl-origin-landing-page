@@ -323,8 +323,15 @@ const Index = () => {
               {partnerships.map((partnership, index) => {
                 const angle = (index * (360 / partnerships.length)) - 90; // Start from top
                 const radius = 320; // Further increased radius for more spacing
-                const x = Math.cos((angle * Math.PI) / 180) * radius;
-                const y = Math.sin((angle * Math.PI) / 180) * radius;
+                let x = Math.cos((angle * Math.PI) / 180) * radius;
+                let y = Math.sin((angle * Math.PI) / 180) * radius;
+                
+                // Adjust specific cards to lower them slightly
+                if (partnership.title.includes("Financial Institutions") || 
+                    partnership.title.includes("Coffee Market Partners") || 
+                    partnership.title.includes("Cooperatives")) {
+                  y += 30; // Move these three cards down by 30px
+                }
                 
                 return (
                   <div
