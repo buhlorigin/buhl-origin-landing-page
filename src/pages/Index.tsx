@@ -26,7 +26,7 @@ const Index = () => {
     {
       icon: Globe,
       title: "Connect to market",
-      description: "Profiles are shared with potential buyers — such as roasters, importers, and platforms — to build long-term relationships and promote fair trade."
+      description: "Profiles are shared with potential market partners — such as roasters, importers, cooperatives, and trading platforms — to build long-term relationships and promote fair trade."
     },
     {
       icon: Shield,
@@ -37,6 +37,39 @@ const Index = () => {
       icon: TrendingUp,
       title: "Accelerate access to finance",
       description: "By validating data and traceability, producers are more eligible for pre-financing or credit via supply chain partners and financial institutions."
+    }
+  ];
+
+  const partnerships = [
+    {
+      number: "1",
+      title: "Coffee Market Partners & Traders",
+      description: "Source coffee that's not just high-quality — but traceable and EUDR-compliant. Tierra Connect links you directly to verified producers.",
+      color: "bg-orange-500"
+    },
+    {
+      number: "2", 
+      title: "Cooperatives & Farming Associations",
+      description: "Digitize your member network and gain clear visibility into every farm you work with. Generate reports and comply with regulations.",
+      color: "bg-red-500"
+    },
+    {
+      number: "3",
+      title: "Service & Product Providers", 
+      description: "Reach new customers at the base of the supply chain. Whether you offer agronomy services, inputs, or training.",
+      color: "bg-green-500"
+    },
+    {
+      number: "4",
+      title: "NGOs, Governments & Development Agencies",
+      description: "Monitor your field programs with ease. Our platform simplifies data collection from smallholders and turns it into insights.",
+      color: "bg-teal-500"
+    },
+    {
+      number: "5",
+      title: "Financial Institutions & Microfinance Providers",
+      description: "Access verifiable farm-level data and transaction histories to better assess farmer income, cash flow, and risk.",
+      color: "bg-blue-500"
     }
   ];
 
@@ -252,6 +285,52 @@ const Index = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Partnership Section */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl md:text-6xl font-bold text-green-900 mb-8">
+              We Partner with
+            </h2>
+          </div>
+
+          <div className="relative">
+            {/* Central Circle */}
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+              <div className="w-32 h-32 bg-gray-800 rounded-full flex items-center justify-center">
+                <div className="text-center text-white">
+                  <div className="text-sm font-semibold">Circle</div>
+                  <div className="text-xs">Partnership</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Partnership Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative">
+              {partnerships.map((partnership, index) => (
+                <Card key={index} className="bg-gray-50 border-gray-200 hover:shadow-lg transition-all duration-300">
+                  <CardContent className="p-6">
+                    <div className="flex items-start space-x-4">
+                      <div className={`${partnership.color} text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0`}>
+                        {partnership.number}
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                          {partnership.title}
+                        </h3>
+                        <p className="text-gray-700 leading-relaxed">
+                          {partnership.description}
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </section>
