@@ -13,7 +13,12 @@ import {
   ArrowRight,
   Leaf,
   Link as LinkIcon,
-  Smartphone
+  Smartphone,
+  Coffee,
+  Building2,
+  Wrench,
+  Heart,
+  Banknote
 } from "lucide-react";
 
 const Index = () => {
@@ -45,31 +50,36 @@ const Index = () => {
       number: "1",
       title: "Coffee Market Partners & Traders",
       description: "Source coffee that's not just high-quality — but traceable and EUDR-compliant. Tierra Connect links you directly to verified producers.",
-      color: "bg-orange-500"
+      color: "bg-orange-500",
+      icon: Coffee
     },
     {
       number: "2", 
       title: "Cooperatives & Farming Associations",
       description: "Digitize your member network and gain clear visibility into every farm you work with. Generate reports and comply with regulations.",
-      color: "bg-red-500"
+      color: "bg-red-500",
+      icon: Users
     },
     {
       number: "3",
       title: "Service & Product Providers", 
       description: "Reach new customers at the base of the supply chain. Whether you offer agronomy services, inputs, or training.",
-      color: "bg-green-500"
+      color: "bg-green-500",
+      icon: Wrench
     },
     {
       number: "4",
       title: "NGOs, Governments & Development Agencies",
       description: "Monitor your field programs with ease. Our platform simplifies data collection from smallholders and turns it into insights.",
-      color: "bg-teal-500"
+      color: "bg-teal-500",
+      icon: Heart
     },
     {
       number: "5",
       title: "Financial Institutions & Microfinance Providers",
       description: "Access verifiable farm-level data and transaction histories to better assess farmer income, cash flow, and risk.",
-      color: "bg-blue-500"
+      color: "bg-blue-500",
+      icon: Banknote
     }
   ];
 
@@ -298,38 +308,51 @@ const Index = () => {
             </h2>
           </div>
 
-          <div className="relative">
+          <div className="relative min-h-[600px] flex items-center justify-center">
             {/* Central Circle */}
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-              <div className="w-32 h-32 bg-gray-800 rounded-full flex items-center justify-center">
+              <div className="w-32 h-32 bg-green-600 rounded-full flex items-center justify-center shadow-lg">
                 <div className="text-center text-white">
-                  <div className="text-sm font-semibold">Circle</div>
-                  <div className="text-xs">Partnership</div>
+                  <div className="text-lg font-bold">Partnerships</div>
                 </div>
               </div>
             </div>
 
-            {/* Partnership Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative">
-              {partnerships.map((partnership, index) => (
-                <Card key={index} className="bg-gray-50 border-gray-200 hover:shadow-lg transition-all duration-300">
-                  <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
-                      <div className={`${partnership.color} text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0`}>
-                        {partnership.number}
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                          {partnership.title}
-                        </h3>
-                        <p className="text-gray-700 leading-relaxed">
-                          {partnership.description}
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
+            {/* Partnership Cards arranged in a circle */}
+            <div className="relative w-full h-[500px]">
+              {partnerships.map((partnership, index) => {
+                const angle = (index * (360 / partnerships.length)) - 90; // Start from top
+                const radius = 200;
+                const x = Math.cos((angle * Math.PI) / 180) * radius;
+                const y = Math.sin((angle * Math.PI) / 180) * radius;
+                
+                return (
+                  <div
+                    key={index}
+                    className="absolute w-64 transform -translate-x-1/2 -translate-y-1/2"
+                    style={{
+                      left: `calc(50% + ${x}px)`,
+                      top: `calc(50% + ${y}px)`,
+                    }}
+                  >
+                    <Card className="bg-white border-gray-200 hover:shadow-lg transition-all duration-300 h-full">
+                      <CardContent className="p-6">
+                        <div className="text-center space-y-4">
+                          <div className={`${partnership.color} text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg`}>
+                            <partnership.icon className="w-8 h-8" />
+                          </div>
+                          <h3 className="text-lg font-semibold text-gray-900">
+                            {partnership.title}
+                          </h3>
+                          <p className="text-gray-700 leading-relaxed text-sm">
+                            {partnership.description}
+                          </p>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
