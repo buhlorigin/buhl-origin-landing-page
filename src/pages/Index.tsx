@@ -112,7 +112,7 @@ const Index = () => {
                 variant="outline" 
                 size="lg"
                 className="border-green-300 text-green-700 hover:bg-green-50 px-10 py-4 text-xl"
-                onClick={() => window.location.href = 'mailto:martin@buhlorigin.com'}
+                onClick={() => window.location.href = 'mailto:hello@buhlorigin.com'}
               >
                 Contact Us
                 <Mail className="ml-3 w-6 h-6" />
@@ -375,10 +375,10 @@ const Index = () => {
             <p className="text-2xl mb-10 text-green-100">
               Just send an email to{" "}
               <a 
-                href="mailto:martin@buhlorigin.com" 
+                href="mailto:hello@buhlorigin.com" 
                 className="underline hover:text-white transition-colors font-medium"
               >
-                martin@buhlorigin.com
+                hello@buhlorigin.com
               </a>
               {" "}— we'd love to hear from you!
             </p>
@@ -386,7 +386,7 @@ const Index = () => {
               variant="secondary" 
               size="lg"
               className="bg-white text-green-700 hover:bg-green-50 px-10 py-4 text-xl"
-              onClick={() => window.location.href = 'mailto:martin@buhlorigin.com'}
+              onClick={() => window.location.href = 'mailto:hello@buhlorigin.com'}
             >
               <Mail className="mr-3 w-6 h-6" />
               Get in Touch
@@ -418,8 +418,8 @@ const Index = () => {
                   <div className="bg-green-800 p-2 rounded-full">
                     <Mail className="w-5 h-5" />
                   </div>
-                  <a href="mailto:martin@buhlorigin.com" className="hover:text-white transition-colors text-lg">
-                    martin@buhlorigin.com
+                  <a href="mailto:hello@buhlorigin.com" className="hover:text-white transition-colors text-lg">
+                    hello@buhlorigin.com
                   </a>
                 </div>
               </div>
