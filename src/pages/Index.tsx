@@ -87,7 +87,7 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        <div className="green-gradient-subtle min-h-screen flex items-center justify-center px-4">
+        <div className="bg-white min-h-screen flex items-center justify-center px-4">
           <div className="absolute inset-0 opacity-50" style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2310b981' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
           }}></div>
@@ -97,7 +97,7 @@ const Index = () => {
               <img 
                 src="/lovable-uploads/3cc553da-5531-4cd8-b8c0-039daf266e30.png" 
                 alt="Buhl Origin Logo" 
-                className="w-24 h-24 md:w-32 md:h-32 mb-4"
+                className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 mb-4"
               />
             </div>
             
