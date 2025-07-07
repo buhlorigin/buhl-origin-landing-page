@@ -119,7 +119,7 @@ const Index = () => {
                 variant="outline" 
                 size="lg"
                 className="border-gray-500 text-gray-700 bg-gray-200/90 hover:bg-gray-300/90 px-10 py-4 text-xl backdrop-blur-sm"
-                onClick={() => window.location.href = 'mailto:hello@buhlorigin.com'}
+                onClick={() => window.location.href = 'mailto:info@buhlorigin.com'}
               >
                 Contact Us
                 <Mail className="ml-3 w-6 h-6" />
@@ -404,10 +404,10 @@ const Index = () => {
               <p className="text-xl mb-10 text-green-100 max-w-2xl mx-auto">
                 Join the digital agriculture revolution. Send an email to{" "}
                 <a 
-                  href="mailto:hello@buhlorigin.com" 
+                  href="mailto:info@buhlorigin.com" 
                   className="underline hover:text-white transition-colors font-medium bg-white/10 px-2 py-1 rounded"
                 >
-                  hello@buhlorigin.com
+                  info@buhlorigin.com
                 </a>
                 {" "}— we'd love to hear from you!
               </p>
@@ -415,7 +415,7 @@ const Index = () => {
                 variant="secondary" 
                 size="lg"
                 className="bg-white text-green-700 hover:bg-gray-50 px-10 py-4 text-xl shadow-lg hover:shadow-xl transition-all hover:scale-105"
-                onClick={() => window.location.href = 'mailto:hello@buhlorigin.com'}
+                onClick={() => window.location.href = 'mailto:info@buhlorigin.com'}
               >
                 <Mail className="mr-3 w-6 h-6" />
                 Get in Touch
@@ -426,40 +426,41 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-green-900 text-green-100 py-12 px-4">
-        <div className="max-w-6xl mx-auto">
+      <footer className="relative bg-gradient-to-br from-gray-800 via-gray-900 to-black text-gray-100 py-12 px-4 overflow-hidden">
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="max-w-6xl mx-auto relative z-10">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-3xl font-bold text-white mb-6">Buhl Origin SL</h3>
-              <div className="space-y-3 text-green-200">
+              <h3 className="text-3xl font-bold text-white mb-6 drop-shadow-lg">Buhl Origin SL</h3>
+              <div className="space-y-3 text-gray-200">
                 <div className="flex items-center space-x-3">
-                  <div className="bg-green-800 p-2 rounded-full">
+                  <div className="bg-gray-700/80 p-2 rounded-full backdrop-blur-sm">
                     <MapPin className="w-5 h-5" />
                   </div>
                   <span className="text-lg">Calle Alonso Cano 60, 28003 Madrid, Spain</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="bg-green-800 p-2 rounded-full">
+                  <div className="bg-gray-700/80 p-2 rounded-full backdrop-blur-sm">
                     <Phone className="w-5 h-5" />
                   </div>
                   <span className="text-lg">+34 672 324 531</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="bg-green-800 p-2 rounded-full">
+                  <div className="bg-gray-700/80 p-2 rounded-full backdrop-blur-sm">
                     <Mail className="w-5 h-5" />
                   </div>
-                  <a href="mailto:hello@buhlorigin.com" className="hover:text-white transition-colors text-lg">
-                    hello@buhlorigin.com
+                  <a href="mailto:info@buhlorigin.com" className="hover:text-white transition-colors text-lg">
+                    info@buhlorigin.com
                   </a>
                 </div>
               </div>
             </div>
             
             <div className="text-center md:text-right">
-              <p className="text-green-300 text-lg mb-2">
+              <p className="text-gray-300 text-lg mb-2">
                 Operated by Buhl Origin SL
               </p>
-              <p className="text-green-400">
+              <p className="text-gray-400">
                 © 2025 Buhl Origin. All rights reserved.
               </p>
             </div>
