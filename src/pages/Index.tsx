@@ -94,6 +94,14 @@ const Index = () => {
           
           <div className="text-center max-w-5xl mx-auto relative z-10 animate-fade-in">
             <div className="flex justify-center mb-8">
+              <img 
+                src="/lovable-uploads/3cc553da-5531-4cd8-b8c0-039daf266e30.png" 
+                alt="Buhl Origin Logo" 
+                className="w-24 h-24 md:w-32 md:h-32 mb-4"
+              />
+            </div>
+            
+            <div className="flex justify-center mb-8">
               <Badge variant="secondary" className="px-6 py-3 text-lg text-green-700 bg-green-100 border-green-200">
                 Digital Coffee Solutions
               </Badge>
