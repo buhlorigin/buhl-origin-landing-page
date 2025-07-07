@@ -95,7 +95,7 @@ const Index = () => {
           <div className="text-center max-w-5xl mx-auto relative z-10 animate-fade-in">
             <div className="flex justify-center mb-8">
               <img 
-                src="/lovable-uploads/9ebe6e7c-fb43-4c6c-8c90-5f55e0ff958c.png" 
+                src="/lovable-uploads/615affde-d69d-45b9-91b3-027bae883732.png" 
                 alt="Buhl Origin Logo" 
                 className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 mb-4"
               />
@@ -119,7 +119,7 @@ const Index = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                className="border-white/30 text-white hover:bg-white/10 px-10 py-4 text-xl backdrop-blur-sm"
+                className="border-gray-500 text-gray-700 bg-gray-200/90 hover:bg-gray-300/90 px-10 py-4 text-xl backdrop-blur-sm"
                 onClick={() => window.location.href = 'mailto:hello@buhlorigin.com'}
               >
                 Contact Us
