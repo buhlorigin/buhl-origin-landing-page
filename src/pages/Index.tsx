@@ -105,11 +105,6 @@ const Index = () => {
               />
             </div>
             
-            <div className="flex justify-center mb-8">
-              <Badge variant="secondary" className="px-6 py-3 text-lg text-white bg-black/20 border-white/20 backdrop-blur-sm">
-                Digital Coffee Solutions
-              </Badge>
-            </div>
             
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-white mb-8 leading-tight drop-shadow-2xl">
               Buhl Origin
