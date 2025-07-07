@@ -87,7 +87,7 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        <div className="bg-white min-h-screen flex items-center justify-center px-4">
+        <div className="bg-gradient-to-br from-gray-100 via-gray-400 to-gray-900 min-h-screen flex items-center justify-center px-4">
           <div className="absolute inset-0 opacity-50" style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2310b981' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
           }}></div>
@@ -95,23 +95,23 @@ const Index = () => {
           <div className="text-center max-w-5xl mx-auto relative z-10 animate-fade-in">
             <div className="flex justify-center mb-8">
               <img 
-                src="/lovable-uploads/3cc553da-5531-4cd8-b8c0-039daf266e30.png" 
+                src="/lovable-uploads/9ebe6e7c-fb43-4c6c-8c90-5f55e0ff958c.png" 
                 alt="Buhl Origin Logo" 
                 className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 mb-4"
               />
             </div>
             
             <div className="flex justify-center mb-8">
-              <Badge variant="secondary" className="px-6 py-3 text-lg text-green-700 bg-green-100 border-green-200">
+              <Badge variant="secondary" className="px-6 py-3 text-lg text-white bg-black/20 border-white/20 backdrop-blur-sm">
                 Digital Coffee Solutions
               </Badge>
             </div>
             
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-green-900 mb-8 leading-tight">
+            <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-white mb-8 leading-tight drop-shadow-2xl">
               Buhl Origin
             </h1>
             
-            <p className="text-2xl md:text-3xl lg:text-4xl text-green-700 mb-12 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-2xl md:text-3xl lg:text-4xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
               Digital tools for transparent, traceable, and fair coffee supply chains.
             </p>
             
@@ -119,7 +119,7 @@ const Index = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                className="border-green-300 text-green-700 hover:bg-green-50 px-10 py-4 text-xl"
+                className="border-white/30 text-white hover:bg-white/10 px-10 py-4 text-xl backdrop-blur-sm"
                 onClick={() => window.location.href = 'mailto:hello@buhlorigin.com'}
               >
                 Contact Us
