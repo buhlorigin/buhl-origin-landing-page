@@ -135,95 +135,101 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-gradient-to-br from-slate-50 via-gray-50 to-green-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-5xl md:text-6xl font-bold text-green-900 mb-8">
+            <div className="inline-flex items-center gap-3 mb-6">
+              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+              <span className="text-sm font-medium text-green-600 tracking-wider uppercase">Digital Agriculture</span>
+            </div>
+            <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-900 via-green-800 to-green-600 bg-clip-text text-transparent mb-8">
               About Tierra Connect
             </h2>
-            <p className="text-2xl text-green-700 max-w-4xl mx-auto leading-relaxed">
-              Tierra Connect digitizes and connects the coffee supply chain — from farm-level data collection to global buyer relationships.
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              Tierra Connect digitizes and connects the coffee supply chain — from farm-level data collection to global buyer relationships through cutting-edge technology.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
-            {/* iPhone and Screen Mockup */}
+            {/* Enhanced Tech Mockup */}
             <div className="animate-slide-in-left">
               <div className="relative">
-                {/* Desktop Monitor */}
-                <div className="bg-gray-100 rounded-2xl p-6 shadow-2xl">
-                  <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                    {/* Monitor Header */}
-                    <div className="bg-gray-50 px-4 py-3 border-b flex items-center space-x-2">
-                      <div className="flex space-x-1">
+                {/* Desktop Monitor with modern design */}
+                <div className="bg-gradient-to-br from-gray-900 to-gray-700 rounded-3xl p-8 shadow-2xl border border-gray-600">
+                  <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    {/* Modern Header */}
+                    <div className="bg-gradient-to-r from-gray-50 to-green-50 px-6 py-4 border-b flex items-center space-x-3">
+                      <div className="flex space-x-2">
                         <div className="w-3 h-3 bg-red-400 rounded-full"></div>
                         <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
                         <div className="w-3 h-3 bg-green-400 rounded-full"></div>
                       </div>
                       <div className="flex-1 text-center">
-                        <div className="bg-gray-200 rounded px-3 py-1 text-sm text-gray-600 inline-block">
+                        <div className="bg-gray-100 rounded-full px-4 py-2 text-sm text-gray-600 inline-flex items-center gap-2">
+                          <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                           tierra-connect.com
                         </div>
                       </div>
                     </div>
                     
-                    {/* Dashboard Content */}
-                    <div className="p-6 h-64">
-                      <div className="grid grid-cols-3 gap-4 mb-6">
-                        <div className="bg-green-50 p-4 rounded-lg text-center">
-                          <div className="text-2xl font-bold text-green-600">1,234</div>
-                          <div className="text-sm text-green-700">Active Farmers</div>
+                    {/* Modern Dashboard */}
+                    <div className="p-8 h-72 bg-gradient-to-br from-white to-gray-50">
+                      <div className="grid grid-cols-3 gap-6 mb-8">
+                        <div className="bg-gradient-to-br from-green-500 to-green-600 p-6 rounded-xl text-white shadow-lg">
+                          <div className="text-3xl font-bold">1,234</div>
+                          <div className="text-green-100 text-sm">Active Farmers</div>
                         </div>
-                        <div className="bg-blue-50 p-4 rounded-lg text-center">
-                          <div className="text-2xl font-bold text-blue-600">456</div>
-                          <div className="text-sm text-blue-700">Profiles Created</div>
+                        <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-6 rounded-xl text-white shadow-lg">
+                          <div className="text-3xl font-bold">456</div>
+                          <div className="text-blue-100 text-sm">Digital Profiles</div>
                         </div>
-                        <div className="bg-purple-50 p-4 rounded-lg text-center">
-                          <div className="text-2xl font-bold text-purple-600">89</div>
-                          <div className="text-sm text-purple-700">Buyers Connected</div>
+                        <div className="bg-gradient-to-br from-purple-500 to-purple-600 p-6 rounded-xl text-white shadow-lg">
+                          <div className="text-3xl font-bold">89</div>
+                          <div className="text-purple-100 text-sm">Global Buyers</div>
                         </div>
                       </div>
                       
-                      <div className="grid grid-cols-2 gap-4">
-                        <div className="space-y-2">
-                          <div className="bg-green-100 h-3 rounded"></div>
-                          <div className="bg-green-100 h-3 rounded w-3/4"></div>
-                          <div className="bg-green-100 h-3 rounded w-1/2"></div>
+                      <div className="grid grid-cols-2 gap-6">
+                        <div className="space-y-3">
+                          <div className="bg-gradient-to-r from-green-200 to-green-300 h-4 rounded-full"></div>
+                          <div className="bg-gradient-to-r from-green-100 to-green-200 h-4 rounded-full w-3/4"></div>
+                          <div className="bg-gradient-to-r from-green-50 to-green-100 h-4 rounded-full w-1/2"></div>
                         </div>
-                        <div className="space-y-2">
-                          <div className="bg-blue-100 h-3 rounded"></div>
-                          <div className="bg-blue-100 h-3 rounded w-4/5"></div>
-                          <div className="bg-blue-100 h-3 rounded w-2/3"></div>
+                        <div className="space-y-3">
+                          <div className="bg-gradient-to-r from-blue-200 to-blue-300 h-4 rounded-full"></div>
+                          <div className="bg-gradient-to-r from-blue-100 to-blue-200 h-4 rounded-full w-4/5"></div>
+                          <div className="bg-gradient-to-r from-blue-50 to-blue-100 h-4 rounded-full w-2/3"></div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                {/* iPhone Mockup */}
-                <div className="absolute -bottom-8 -right-8 w-32 bg-black rounded-3xl p-2 shadow-xl">
-                  <div className="bg-white rounded-2xl overflow-hidden h-56">
-                    {/* iPhone Screen */}
-                    <div className="bg-green-50 h-full relative">
-                      <div className="absolute top-4 left-1/2 transform -translate-x-1/2">
-                        <div className="w-8 h-1 bg-black rounded-full"></div>
+                {/* Modern iPhone */}
+                <div className="absolute -bottom-12 -right-12 w-36 bg-gradient-to-br from-gray-900 to-black rounded-[2.5rem] p-3 shadow-2xl">
+                  <div className="bg-white rounded-[2rem] overflow-hidden h-64">
+                    <div className="bg-gradient-to-br from-green-50 to-green-100 h-full relative">
+                      <div className="absolute top-6 left-1/2 transform -translate-x-1/2">
+                        <div className="w-10 h-1.5 bg-black rounded-full"></div>
                       </div>
                       
-                      <div className="pt-8 px-3 h-full">
-                        <div className="text-center mb-4">
-                          <Smartphone className="w-8 h-8 text-green-600 mx-auto mb-2" />
+                      <div className="pt-12 px-4 h-full">
+                        <div className="text-center mb-6">
+                          <div className="bg-gradient-to-br from-green-500 to-green-600 p-3 rounded-2xl w-12 h-12 mx-auto mb-3 flex items-center justify-center">
+                            <Smartphone className="w-6 h-6 text-white" />
+                          </div>
                           <div className="text-xs font-semibold text-green-800">Farm Profile</div>
                         </div>
                         
-                        <div className="space-y-2">
-                          <div className="bg-green-200 h-2 rounded w-full"></div>
-                          <div className="bg-green-200 h-2 rounded w-3/4"></div>
-                          <div className="bg-green-200 h-2 rounded w-1/2"></div>
+                        <div className="space-y-3">
+                          <div className="bg-gradient-to-r from-green-300 to-green-400 h-3 rounded-full w-full"></div>
+                          <div className="bg-gradient-to-r from-green-200 to-green-300 h-3 rounded-full w-3/4"></div>
+                          <div className="bg-gradient-to-r from-green-100 to-green-200 h-3 rounded-full w-1/2"></div>
                         </div>
                         
-                        <div className="mt-4 grid grid-cols-2 gap-1">
-                          <div className="bg-green-300 h-12 rounded"></div>
-                          <div className="bg-green-300 h-12 rounded"></div>
+                        <div className="mt-6 grid grid-cols-2 gap-2">
+                          <div className="bg-gradient-to-br from-green-400 to-green-500 h-14 rounded-xl"></div>
+                          <div className="bg-gradient-to-br from-green-300 to-green-400 h-14 rounded-xl"></div>
                         </div>
                       </div>
                     </div>
@@ -234,40 +240,40 @@ const Index = () => {
             
             <div className="space-y-8">
               <div className="text-center">
-                <div className="inline-flex items-center space-x-3 mb-6">
-                  <div className="bg-green-100 p-3 rounded-full">
-                    <Leaf className="w-8 h-8 text-green-600" />
+                <div className="inline-flex items-center space-x-4 mb-8 p-4 bg-white rounded-2xl shadow-lg">
+                  <div className="bg-gradient-to-br from-green-500 to-green-600 p-4 rounded-xl shadow-lg">
+                    <Leaf className="w-8 h-8 text-white" />
                   </div>
-                  <ArrowRight className="w-6 h-6 text-green-500" />
-                  <div className="bg-blue-100 p-3 rounded-full">
-                    <Globe className="w-8 h-8 text-blue-600" />
+                  <ArrowRight className="w-6 h-6 text-gray-400" />
+                  <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-4 rounded-xl shadow-lg">
+                    <Globe className="w-8 h-8 text-white" />
                   </div>
-                  <ArrowRight className="w-6 h-6 text-green-500" />
-                  <div className="bg-green-100 p-3 rounded-full">
-                    <LinkIcon className="w-8 h-8 text-green-600" />
+                  <ArrowRight className="w-6 h-6 text-gray-400" />
+                  <div className="bg-gradient-to-br from-purple-500 to-purple-600 p-4 rounded-xl shadow-lg">
+                    <LinkIcon className="w-8 h-8 text-white" />
                   </div>
                 </div>
-                <p className="text-xl text-green-700 font-medium">
+                <p className="text-xl text-gray-700 font-medium">
                   From Farm to Global Markets
                 </p>
               </div>
 
               <div className="grid grid-cols-2 gap-4">
-                <div className="text-center p-4 bg-green-50 rounded-lg">
-                  <div className="text-3xl font-bold text-green-600">Farm-to-Cup</div>
-                  <div className="text-green-700">Traceability</div>
+                <div className="text-center p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-xl border border-green-200 hover:shadow-lg transition-all">
+                  <div className="text-3xl font-bold bg-gradient-to-r from-green-600 to-green-700 bg-clip-text text-transparent">Farm-to-Cup</div>
+                  <div className="text-green-700 font-medium">Traceability</div>
                 </div>
-                <div className="text-center p-4 bg-blue-50 rounded-lg">
-                  <div className="text-3xl font-bold text-blue-600">Digital</div>
-                  <div className="text-blue-700">Profiles</div>
+                <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl border border-blue-200 hover:shadow-lg transition-all">
+                  <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent">Digital</div>
+                  <div className="text-blue-700 font-medium">Profiles</div>
                 </div>
-                <div className="text-center p-4 bg-purple-50 rounded-lg">
-                  <div className="text-3xl font-bold text-purple-600">Fair</div>
-                  <div className="text-purple-700">Trade</div>
+                <div className="text-center p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl border border-purple-200 hover:shadow-lg transition-all">
+                  <div className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-purple-700 bg-clip-text text-transparent">Fair</div>
+                  <div className="text-purple-700 font-medium">Trade</div>
                 </div>
-                <div className="text-center p-4 bg-emerald-50 rounded-lg">
-                  <div className="text-3xl font-bold text-emerald-600">Financial</div>
-                  <div className="text-emerald-700">Access</div>
+                <div className="text-center p-6 bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-xl border border-emerald-200 hover:shadow-lg transition-all">
+                  <div className="text-3xl font-bold bg-gradient-to-r from-emerald-600 to-emerald-700 bg-clip-text text-transparent">Financial</div>
+                  <div className="text-emerald-700 font-medium">Access</div>
                 </div>
               </div>
             </div>
@@ -276,30 +282,40 @@ const Index = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 px-4 green-gradient-subtle">
+      <section className="py-20 px-4 bg-gradient-to-br from-white via-gray-50 to-green-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-bold text-green-900 mb-8">
-              How It Works
+            <div className="inline-flex items-center gap-3 mb-6">
+              <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+              <span className="text-sm font-medium text-blue-600 tracking-wider uppercase">How It Works</span>
+            </div>
+            <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-900 via-blue-800 to-green-600 bg-clip-text text-transparent mb-8">
+              Technology Meets Agriculture
             </h2>
-            <p className="text-2xl text-green-700 max-w-3xl mx-auto">
-              Our comprehensive platform supports every step of the coffee supply chain
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Our comprehensive platform supports every step of the coffee supply chain with cutting-edge digital solutions
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             {features.map((feature, index) => (
-              <Card key={index} className="bg-white/90 backdrop-blur-sm border-green-200 hover:shadow-xl transition-all duration-300 animate-fade-in hover:scale-105" style={{animationDelay: `${index * 0.2}s`}}>
+              <Card key={index} className="bg-white/80 backdrop-blur-sm border border-gray-200 hover:border-green-300 hover:shadow-2xl transition-all duration-300 animate-fade-in hover:scale-105 group" style={{animationDelay: `${index * 0.2}s`}}>
                 <CardContent className="p-8">
-                  <div className="flex items-start space-x-4">
-                    <div className="bg-green-100 p-4 rounded-xl flex-shrink-0 border border-green-200">
-                      <feature.icon className="w-8 h-8 text-green-600" />
+                  <div className="flex items-start space-x-6">
+                    <div className="bg-gradient-to-br from-green-500 to-green-600 p-4 rounded-2xl flex-shrink-0 shadow-lg group-hover:shadow-green-200 transition-all">
+                      <feature.icon className="w-8 h-8 text-white" />
                     </div>
-                    <div>
-                      <h3 className="text-2xl font-semibold text-green-900 mb-4">
-                        {index + 1}. {feature.title}
+                    <div className="flex-1">
+                      <div className="flex items-center gap-3 mb-4">
+                        <span className="bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent text-lg font-bold">
+                          {String(index + 1).padStart(2, '0')}
+                        </span>
+                        <div className="h-px bg-gradient-to-r from-green-200 to-blue-200 flex-1"></div>
+                      </div>
+                      <h3 className="text-2xl font-semibold text-gray-900 mb-4 group-hover:text-green-700 transition-colors">
+                        {feature.title}
                       </h3>
-                      <p className="text-green-700 leading-relaxed text-lg">
+                      <p className="text-gray-600 leading-relaxed text-lg">
                         {feature.description}
                       </p>
                     </div>
@@ -378,31 +394,38 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="green-gradient rounded-2xl p-12 text-white shadow-2xl">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8">
-              Want to learn more about the project?
-            </h2>
-            <p className="text-2xl mb-10 text-green-100">
-              Just send an email to{" "}
-              <a 
-                href="mailto:hello@buhlorigin.com" 
-                className="underline hover:text-white transition-colors font-medium"
+          <div className="relative bg-gradient-to-br from-green-600 via-green-700 to-blue-700 rounded-3xl p-12 text-white shadow-2xl overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-r from-green-600/20 to-blue-600/20 backdrop-blur-sm"></div>
+            <div className="relative z-10">
+              <div className="inline-flex items-center gap-3 mb-6">
+                <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                <span className="text-sm font-medium text-green-100 tracking-wider uppercase">Ready to Connect?</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold mb-8">
+                Want to learn more about the project?
+              </h2>
+              <p className="text-xl mb-10 text-green-100 max-w-2xl mx-auto">
+                Join the digital agriculture revolution. Send an email to{" "}
+                <a 
+                  href="mailto:hello@buhlorigin.com" 
+                  className="underline hover:text-white transition-colors font-medium bg-white/10 px-2 py-1 rounded"
+                >
+                  hello@buhlorigin.com
+                </a>
+                {" "}— we'd love to hear from you!
+              </p>
+              <Button 
+                variant="secondary" 
+                size="lg"
+                className="bg-white text-green-700 hover:bg-gray-50 px-10 py-4 text-xl shadow-lg hover:shadow-xl transition-all hover:scale-105"
+                onClick={() => window.location.href = 'mailto:hello@buhlorigin.com'}
               >
-                hello@buhlorigin.com
-              </a>
-              {" "}— we'd love to hear from you!
-            </p>
-            <Button 
-              variant="secondary" 
-              size="lg"
-              className="bg-white text-green-700 hover:bg-green-50 px-10 py-4 text-xl"
-              onClick={() => window.location.href = 'mailto:hello@buhlorigin.com'}
-            >
-              <Mail className="mr-3 w-6 h-6" />
-              Get in Touch
-            </Button>
+                <Mail className="mr-3 w-6 h-6" />
+                Get in Touch
+              </Button>
+            </div>
           </div>
         </div>
       </section>
