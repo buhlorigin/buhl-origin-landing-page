@@ -88,33 +88,29 @@ const TierraConnect = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header with Back Button */}
-      <header className="bg-white border-b border-gray-200 py-4 px-4">
-        <div className="max-w-6xl mx-auto flex items-center">
-          <Button
-            variant="ghost"
-            onClick={() => navigate('/')}
-            className="flex items-center gap-2 text-gray-600 hover:text-gray-900"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            Back to Home
-          </Button>
-          <div className="flex-1 text-center">
-            <h1 className="text-2xl font-bold text-gray-900">TierraConnect</h1>
+      {/* Header with Back Button and Logo */}
+      <header className="bg-white border-b border-gray-200 py-6 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex items-center mb-6">
+            <Button
+              variant="ghost"
+              onClick={() => navigate('/')}
+              className="flex items-center gap-2 text-gray-600 hover:text-gray-900"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Back to Home
+            </Button>
+          </div>
+          <div className="text-center">
+            <img 
+              src="/lovable-uploads/0f9ba816-6a2c-47ef-b71f-4b7a9521f4f8.png" 
+              alt="TierraConnect Logo" 
+              className="w-80 h-auto mx-auto mb-4"
+            />
+            <p className="text-lg text-gray-600 font-medium">connect with producers</p>
           </div>
         </div>
       </header>
-
-      {/* Logo Section */}
-      <section className="py-12 px-4 bg-white">
-        <div className="max-w-6xl mx-auto text-center">
-          <img 
-            src="/lovable-uploads/615affde-d69d-45b9-91b3-027bae883732.png" 
-            alt="TierraConnect Logo" 
-            className="w-48 h-48 mx-auto mb-8"
-          />
-        </div>
-      </section>
 
       {/* About Section */}
       <section className="py-20 px-4 bg-gradient-to-br from-slate-50 via-gray-50 to-green-50">
