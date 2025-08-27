@@ -11,14 +11,12 @@ const ROSSpecialtyCoffee = () => {
   const [piconaImageIndex, setPiconaImageIndex] = useState(0);
   
   const mirjamImages = [
-    "/lovable-uploads/798210b0-e33e-4d60-b184-5cb3639ab036.png",
     "/lovable-uploads/ef40ee80-56d3-47a3-9208-1557deedb594.png",
     "/lovable-uploads/4667eb7f-4a28-4236-9947-c4d9b1d93aad.png",
     "/lovable-uploads/cb13d26a-895b-40c6-a65c-ffc34eee4bb5.png"
   ];
   
   const piconaImages = [
-    "/lovable-uploads/1ec419a5-3c6e-4da2-9603-1b479af97b26.png",
     "/lovable-uploads/1d882da3-3a27-42b7-999d-271b8c4d0c39.png",
     "/lovable-uploads/64f8dfe7-1e9d-49db-99e4-76522d3decad.png",
     "/lovable-uploads/2d38b3a5-da43-4425-a9ea-cb160f4e9168.png"
