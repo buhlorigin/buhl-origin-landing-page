@@ -105,6 +105,17 @@ const TierraConnect = () => {
         </div>
       </header>
 
+      {/* Logo Section */}
+      <section className="py-12 px-4 bg-white">
+        <div className="max-w-6xl mx-auto text-center">
+          <img 
+            src="/lovable-uploads/615affde-d69d-45b9-91b3-027bae883732.png" 
+            alt="TierraConnect Logo" 
+            className="w-48 h-48 mx-auto mb-8"
+          />
+        </div>
+      </section>
+
       {/* About Section */}
       <section className="py-20 px-4 bg-gradient-to-br from-slate-50 via-gray-50 to-green-50">
         <div className="max-w-6xl mx-auto">
@@ -272,12 +283,12 @@ const TierraConnect = () => {
 
           <div className="relative">
             {/* Central Logo */}
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30">
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30" style={{ top: 'calc(50% + 25px)' }}>
               <div className="bg-white rounded-full p-8 shadow-2xl border-4 border-green-100">
-                <div className="w-24 h-24 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center">
+                <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center">
                   <img 
-                    src="/lovable-uploads/615affde-d69d-45b9-91b3-027bae883732.png" 
-                    alt="Buhl Origin Logo" 
+                    src="/lovable-uploads/88dd0159-60b7-4ff1-bc8b-346ab9446515.png" 
+                    alt="TierraConnect Logo" 
                     className="w-16 h-16"
                   />
                 </div>
@@ -285,18 +296,21 @@ const TierraConnect = () => {
             </div>
 
             {/* Partnership Cards arranged in a circle */}
-            <div className="relative w-full h-[750px]">
+            <div className="relative w-full h-[800px]">
               {partnerships.map((partnership, index) => {
                 const angle = (index * (360 / partnerships.length)) - 90; // Start from top
                 const radius = 320; // Further increased radius for more spacing
                 let x = Math.cos((angle * Math.PI) / 180) * radius;
                 let y = Math.sin((angle * Math.PI) / 180) * radius;
                 
-                // Adjust specific cards to lower them slightly
+                // Move all cards down by 50px to avoid overlapping with subtitle
+                y += 50;
+                
+                // Adjust specific cards to lower them slightly more
                 if (partnership.title.includes("Financial Institutions") || 
                     partnership.title.includes("Coffee Market Partners") || 
                     partnership.title.includes("Cooperatives")) {
-                  y += 30; // Move these three cards down by 30px
+                  y += 30; // Move these three cards down by additional 30px
                 }
                 
                 return (
@@ -358,13 +372,13 @@ const TierraConnect = () => {
                   Visit Platform
                 </Button>
                 <Button 
-                  variant="outline" 
+                  variant="secondary" 
                   size="lg"
-                  className="border-white text-white hover:bg-white hover:text-green-700 px-8 py-4 text-lg transition-all hover:scale-105"
+                  className="bg-white text-green-700 hover:bg-gray-50 px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105"
                   onClick={() => window.location.href = 'mailto:info@tierra-connect.com'}
                 >
                   <Mail className="mr-3 w-5 h-5" />
-                  Send Message
+                  info@tierra-connect.com
                 </Button>
               </div>
             </div>
