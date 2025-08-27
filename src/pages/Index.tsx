@@ -388,6 +388,113 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Products & Services Section */}
+      <section className="py-20 px-4 bg-gradient-to-br from-gray-50 via-white to-green-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16 animate-fade-in">
+            <div className="inline-flex items-center gap-3 mb-6">
+              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+              <span className="text-sm font-medium text-green-600 tracking-wider uppercase">Our Solutions</span>
+            </div>
+            <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-900 via-green-800 to-green-600 bg-clip-text text-transparent mb-8">
+              Products & Services
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              Comprehensive solutions for transparency, traceability, and sustainability in the coffee supply chain.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* TierraConnect */}
+            <div className="group">
+              <Card className="h-full bg-white border-gray-200 hover:shadow-2xl transition-all duration-300 hover:border-green-300 hover:-translate-y-2">
+                <CardContent className="p-8 text-center h-full flex flex-col">
+                  <div className="mb-8">
+                    <div className="w-32 h-32 mx-auto mb-6 bg-white rounded-2xl shadow-lg flex items-center justify-center border border-gray-100">
+                      <img 
+                        src="/lovable-uploads/24576b98-889b-46ec-8ab1-b3689cdf4840.png" 
+                        alt="TierraConnect Logo" 
+                        className="w-24 h-24 object-contain"
+                      />
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4">TierraConnect</h3>
+                    <p className="text-gray-600 leading-relaxed mb-6">
+                      A digital platform enabling traceability, compliance, and fair trade in the coffee supply chain.
+                    </p>
+                  </div>
+                  <div className="mt-auto">
+                    <Button 
+                      variant="outline" 
+                      className="w-full border-green-500 text-green-600 hover:bg-green-500 hover:text-white transition-all duration-300 group-hover:scale-105"
+                    >
+                      Deep Dive
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* ROS Specialty Coffee */}
+            <div className="group">
+              <Card className="h-full bg-white border-gray-200 hover:shadow-2xl transition-all duration-300 hover:border-green-300 hover:-translate-y-2">
+                <CardContent className="p-8 text-center h-full flex flex-col">
+                  <div className="mb-8">
+                    <div className="w-32 h-32 mx-auto mb-6 bg-white rounded-2xl shadow-lg flex items-center justify-center border border-gray-100">
+                      <img 
+                        src="/lovable-uploads/a7b4219b-febc-4c1d-85fe-9f3139b3a3eb.png" 
+                        alt="ROS Specialty Coffee Logo" 
+                        className="w-24 h-24 object-contain"
+                      />
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4">ROS Specialty Coffee</h3>
+                    <p className="text-gray-600 leading-relaxed mb-6">
+                      Premium green and roasted coffee beans sourced from Nicaragua, roasted in Spain, and delivered with full traceability.
+                    </p>
+                  </div>
+                  <div className="mt-auto">
+                    <Button 
+                      variant="outline" 
+                      className="w-full border-green-500 text-green-600 hover:bg-green-500 hover:text-white transition-all duration-300 group-hover:scale-105"
+                    >
+                      Deep Dive
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* And More */}
+            <div className="group">
+              <Card className="h-full bg-white border-gray-200 hover:shadow-2xl transition-all duration-300 hover:border-green-300 hover:-translate-y-2">
+                <CardContent className="p-8 text-center h-full flex flex-col">
+                  <div className="mb-8">
+                    <div className="w-32 h-32 mx-auto mb-6 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl shadow-lg flex items-center justify-center">
+                      <div className="text-white text-4xl font-bold">+</div>
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4">And More...</h3>
+                    <p className="text-gray-600 leading-relaxed mb-6">
+                      Additional services and innovations coming soon to strengthen sustainability and transparency in coffee.
+                    </p>
+                  </div>
+                  <div className="mt-auto">
+                    <Button 
+                      variant="outline" 
+                      className="w-full border-gray-400 text-gray-500 hover:bg-gray-500 hover:text-white transition-all duration-300 group-hover:scale-105"
+                      disabled
+                    >
+                      Coming Soon
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 px-4 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-4xl mx-auto text-center">
