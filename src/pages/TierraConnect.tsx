@@ -89,25 +89,26 @@ const TierraConnect = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Header with Back Button and Logo */}
-      <header className="bg-white border-b border-gray-200 py-6 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex items-center mb-6">
-            <Button
-              variant="ghost"
-              onClick={() => navigate('/')}
-              className="flex items-center gap-2 text-gray-600 hover:text-gray-900"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              Back to Home
-            </Button>
-          </div>
-          <div className="text-center">
+      <header className="bg-white border-b border-gray-200 py-4 px-4">
+        <div className="max-w-6xl mx-auto flex items-center">
+          <Button
+            variant="ghost"
+            onClick={() => navigate('/')}
+            className="flex items-center gap-2 text-gray-600 hover:text-gray-900"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back to Home
+          </Button>
+          <div className="flex items-center gap-4 ml-8">
             <img 
               src="/lovable-uploads/0f9ba816-6a2c-47ef-b71f-4b7a9521f4f8.png" 
               alt="TierraConnect Logo" 
-              className="w-80 h-auto mx-auto mb-4"
+              className="w-12 h-12"
             />
-            <p className="text-lg text-gray-600 font-medium">connect with producers</p>
+            <div>
+              <h1 className="text-2xl font-bold text-gray-900">TierraConnect</h1>
+              <p className="text-sm text-gray-600">Connect with Producers</p>
+            </div>
           </div>
         </div>
       </header>
