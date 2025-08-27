@@ -111,7 +111,7 @@ const Index = () => {
             </h1>
             
             <p className="text-2xl md:text-3xl lg:text-4xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
-              Digital tools for transparent, traceable, and fair coffee supply chains.
+              Building solutions for a transparent, traceable and fair coffee supply chain.
             </p>
             
             <div className="flex justify-center">
