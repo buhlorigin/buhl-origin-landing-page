@@ -2,10 +2,14 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, Mail, ExternalLink, ChevronLeft, ChevronRight, MapPin, Phone } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const ROSSpecialtyCoffee = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   
   const [mirjamImageIndex, setMirjamImageIndex] = useState(0);
   const [piconaImageIndex, setPiconaImageIndex] = useState(0);
