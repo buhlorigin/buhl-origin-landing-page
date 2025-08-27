@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowLeft, Mail, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowLeft, Mail, ExternalLink, ChevronLeft, ChevronRight, MapPin, Phone } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
@@ -102,7 +102,7 @@ const ROSSpecialtyCoffee = () => {
                 </div>
                 <div className="relative h-96 md:h-auto">
                   <img 
-                    src="/lovable-uploads/b7ac5c74-3ae8-4689-9732-79618ed31565.png"
+                    src="/lovable-uploads/f838e1cf-d6ae-47df-9f22-d2c670adf03a.png"
                     alt="Generational coffee farming tradition"
                     className="absolute inset-0 w-full h-full object-cover"
                   />
@@ -250,9 +250,9 @@ const ROSSpecialtyCoffee = () => {
                   Visit roscoffee.es
                 </Button>
                 <Button 
-                  variant="outline" 
+                  variant="secondary" 
                   size="lg"
-                  className="border-white text-white hover:bg-white hover:text-green-700 px-8 py-4 text-lg transition-all hover:scale-105"
+                  className="bg-white text-green-700 hover:bg-gray-50 px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105"
                   onClick={() => window.location.href = 'mailto:hello@roscoffee.es'}
                 >
                   <Mail className="mr-3 w-5 h-5" />
@@ -263,6 +263,49 @@ const ROSSpecialtyCoffee = () => {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="relative bg-gradient-to-br from-gray-800 via-gray-900 to-black text-gray-100 py-12 px-4 overflow-hidden">
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="max-w-6xl mx-auto relative z-10">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 className="text-3xl font-bold text-white mb-6 drop-shadow-lg">Buhl Origin SL</h3>
+              <div className="space-y-3 text-gray-200">
+                <div className="flex items-center space-x-3">
+                  <div className="bg-gray-700/80 p-2 rounded-full backdrop-blur-sm">
+                    <MapPin className="w-5 h-5" />
+                  </div>
+                  <span className="text-lg">Calle Alonso Cano 60, 28003 Madrid, Spain</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="bg-gray-700/80 p-2 rounded-full backdrop-blur-sm">
+                    <Phone className="w-5 h-5" />
+                  </div>
+                  <span className="text-lg">+34 672 324 531</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="bg-gray-700/80 p-2 rounded-full backdrop-blur-sm">
+                    <Mail className="w-5 h-5" />
+                  </div>
+                  <a href="mailto:info@buhlorigin.com" className="hover:text-white transition-colors text-lg">
+                    info@buhlorigin.com
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div className="text-center md:text-right">
+              <p className="text-gray-300 text-lg mb-2">
+                Operated by Buhl Origin SL
+              </p>
+              <p className="text-gray-400">
+                © 2025 Buhl Origin. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
