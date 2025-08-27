@@ -95,7 +95,7 @@ const Index = () => {
                   <div className="mb-8">
                     <div className="w-32 h-32 mx-auto mb-6 bg-white rounded-2xl shadow-lg flex items-center justify-center border border-gray-100">
                       <img 
-                        src="user-uploads://24576b98-889b-46ec-8ab1-b3689cdf4840.png" 
+                        src="/lovable-uploads/24576b98-889b-46ec-8ab1-b3689cdf4840.png" 
                         alt="TierraConnect Logo" 
                         className="w-24 h-24 object-contain"
                       />
@@ -126,20 +126,21 @@ const Index = () => {
                   <div className="mb-8">
                     <div className="w-32 h-32 mx-auto mb-6 bg-white rounded-2xl shadow-lg flex items-center justify-center border border-gray-100">
                       <img 
-                        src="user-uploads://a7b4219b-febc-4c1d-85fe-9f3139b3a3eb.png" 
+                        src="/lovable-uploads/a7b4219b-febc-4c1d-85fe-9f3139b3a3eb.png" 
                         alt="ROS Specialty Coffee Logo" 
                         className="w-24 h-24 object-contain"
                       />
                     </div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-4">ROS Specialty Coffee</h3>
                     <p className="text-gray-600 leading-relaxed mb-6">
-                      Premium green and roasted coffee beans sourced from Nicaragua, roasted in Spain, and delivered with full traceability.
+                      Specialty coffee grown on our family farms in Nicaragua and roasted in Spain for full traceability and quality control. From seed to sip.
                     </p>
                   </div>
                   <div className="mt-auto">
                     <Button 
                       variant="outline" 
                       className="w-full border-green-500 text-green-600 hover:bg-green-500 hover:text-white transition-all duration-300 group-hover:scale-105"
+                      onClick={() => navigate('/ros-specialty-coffee')}
                     >
                       Deep Dive
                       <ArrowRight className="ml-2 w-4 h-4" />

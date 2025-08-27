@@ -17,7 +17,8 @@ import {
   Building2,
   Wrench,
   Heart,
-  Banknote
+  Banknote,
+  ExternalLink
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
@@ -325,6 +326,47 @@ const TierraConnect = () => {
                   </div>
                 );
               })}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="py-20 px-4 bg-gradient-to-br from-gray-50 to-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="relative bg-gradient-to-br from-green-600 via-green-700 to-blue-700 rounded-3xl p-12 text-white shadow-2xl overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-r from-green-600/20 to-blue-600/20 backdrop-blur-sm"></div>
+            <div className="relative z-10">
+              <div className="inline-flex items-center gap-3 mb-6">
+                <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                <span className="text-sm font-medium text-green-100 tracking-wider uppercase">Ready to Connect?</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold mb-8">
+                Transform Your Supply Chain
+              </h2>
+              <p className="text-xl mb-10 text-green-100 max-w-2xl mx-auto">
+                Join the digital agriculture revolution. Experience transparency and traceability like never before.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button 
+                  variant="secondary" 
+                  size="lg"
+                  className="bg-white text-green-700 hover:bg-gray-50 px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105"
+                  onClick={() => window.open('https://tierra-connect.com', '_blank')}
+                >
+                  <ExternalLink className="mr-3 w-5 h-5" />
+                  Visit Platform
+                </Button>
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  className="border-white text-white hover:bg-white hover:text-green-700 px-8 py-4 text-lg transition-all hover:scale-105"
+                  onClick={() => window.location.href = 'mailto:info@tierra-connect.com'}
+                >
+                  <Mail className="mr-3 w-5 h-5" />
+                  Send Message
+                </Button>
+              </div>
             </div>
           </div>
         </div>
